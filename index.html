@@ -78,12 +78,48 @@
     <p>Block element testing</p>
     <p>This paragraph has been designed for testing purposes only.It has nothing to do with any events and copyright.Okay cool.Let's check it out, how it looks.Hurray it's working</p>
   </div>
-  <div class="cities">okay lets check the impleentaion of class on block elements using the class and div tag</div>
+  <div class="cities">okay lets check the implementaion of class on block elements using the class and div tag</div>
   <!--to display a page within a webpage we use Iframes-->
   <iframe src="demo_iframe.htm"height="100"width="300"style="border:none;"></iframe>
   <!--entity testing less than sign can be treated as opening tag ..so to prevent such mishaps we use entities-->
   <p>7 &lt 8</p>
   <p>copyright sign &copy </p>
+  <h3>My first form</h3>
+	<form action="/submit.html">
+		<div>
+			<label for="fname">firstname</label>
+			<input type="text" name="fname" id="fname" value="username">
+      </div>
+      <div>
+        <label for="gender">Gender</label><br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+      </div>
+      <div>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+      </div>
+      <div>
+        <label for="textarea">Bio</label>
+        <input type="textarea" name="textarea" value="Enter sth">
+        </div>
+        <div>
+          <label for="email">email</label>
+          <input type="email" name="email" value="email">
+        </div>
+        <div>
+          <label for="phone">phone</label>
+          <input type="tel" name="phone" id="phone" value="phone">
+        </div>
+        <div>
+          <label for="age">age</label>
+          <input type="number" name="age" min="1" max="200" >
+          </div>
+      <div>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+        </div>
+	</form>
 </body>
 
 </html>
