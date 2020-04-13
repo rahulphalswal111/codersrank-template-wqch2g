@@ -1,0 +1,25 @@
+#xyz{
+  outline:solid;
+  outline-width: mediun;
+  text-align: center;
+  font-size:5vw;      
+  color:indigo;
+  background-color:cadetblue;
+  outline-color:blue;
+}
+#first{
+  padding:10px;
+  background-color:cadetblue;
+  width:300px;
+  border:15px solid black;
+  margin:10px;
+}
+.new{
+  font-family: "Times New Roman",Times,Serif;
+}
+.new1{
+  font-family: "Lucida Console", Courier, monospace;
+}
+body{
+  font-size: 100%;   
+}

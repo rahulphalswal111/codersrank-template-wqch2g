@@ -2,96 +2,26 @@
 <html>
 
 <head>
-	<title>myfirstsite</title>
-	<style>
-    #head2{
-      color:orange;
-    }
-    .cities{
-      background-color:black;
-      color:white;
-      padding:15px;
-      margin:20px;
-    }
-		p {
-			color: gray;
-		}
-
-		table,
-		th,
-		td {
-			border: 1px solid black;
-      border-collapse:collapse;
-		}
-    th,td{
-      padding:25px;         
-    }               
-    th{
-      text-align:left;
-    }
-    table#t01{
-      background-color:pink;
-    }
-	</style>
-</head>       <!--can't put commments while elements tag are open-->
+	<title>first form</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
 <body>
-	<h3>My <span style="color:red">first</span> table</h3>
-	<p>Here we go</p>
-	<table id="t01">
-    <caption>SSN RECORD</caption>   <!--caption tag used-->
-		<tr>
-			<th>NAME</th>
-			<th>SSN ID</th>
-			<th>AGE</th>
-		</tr>
-		<tr>
-			<td>XYZ</td>
-			<td>45678</td>
-			<td>44</td>
-		</tr>
-		<tr>
-			<td>ABC</td>
-			<td>8909</td>
-			<td>66</td>
-		</tr>
-		<tr>
-			<td>NAMO</td>
-			<td>78912</td>
-			<td>99</td>
-		</tr>
-	</table>
-  <h2 id="head2">Lists testing</h2>
-  <h4>Ordered list</h4>
-  <ol type="a";>
-    <li>1st item</li>
-    <li>2nd item</li>
-    <li>3rd item</li>
-    </ol>
-    <h4>unordered-list</h4>
-  <ul style="list-style-type:circle">
-    <li>1st entry</li>
-    <li>2nd entry</li>
-    <li>3rd entry</li>
-  </ul>
-  <div style="background-color:black;color:white;padding:20px;">
-    <p>Block element testing</p>
-    <p>This paragraph has been designed for testing purposes only.It has nothing to do with any events and copyright.Okay cool.Let's check it out, how it looks.Hurray it's working</p>
-  </div>
-  <div class="cities">okay lets check the implementaion of class on block elements using the class and div tag</div>
-  <!--to display a page within a webpage we use Iframes-->
-  <iframe src="demo_iframe.htm"height="100"width="300"style="border:none;"></iframe>
-  <!--entity testing less than sign can be treated as opening tag ..so to prevent such mishaps we use entities-->
-  <p>7 &lt 8</p>
-  <p>copyright sign &copy </p>
-  <h3>My first form</h3>
+	<h3>My first form</h3>
+  <p id="xyz">Here we go</p>
+      <div >
+        <p id="first">This area will represent the text inside the box.This is a testing of the box model using the css.I'm practising this on the stckblitz online ide which  i found on codersrank</p>
+        </div></br>
+        </br>
+        <p class="new">Font testing</p>
+        <p class="new1">Another font testing</p>
 	<form action="/submit.html">
 		<div>
 			<label for="fname">firstname</label>
-			<input type="text" name="fname" id="fname" value="username">
+			<input type="text" name="fname" id="fname" placeholder="username">
       </div>
       <div>
-        <label for="gender">Gender</label><br>
+        <label for="gender"><b>Gender</b></label></br>
         <label for="male">Male</label>
         <input type="radio" id="male" name="gender" value="male">
       </div>
@@ -99,26 +29,6 @@
         <label for="female">Female</label>
         <input type="radio" id="female" name="gender" value="female">
       </div>
-      <div>
-        <label for="textarea">Bio</label>
-        <input type="textarea" name="textarea" value="Enter sth">
-        </div>
-        <div>
-          <label for="email">email</label>
-          <input type="email" name="email" value="email">
-        </div>
-        <div>
-          <label for="phone">phone</label>
-          <input type="tel" name="phone" id="phone" value="phone">
-        </div>
-        <div>
-          <label for="age">age</label>
-          <input type="number" name="age" min="1" max="200" >
-          </div>
-      <div>
-        <input type="reset" value="reset">
-        <input type="submit" value="submit">
-        </div>
 	</form>
 </body>
 
