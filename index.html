@@ -10,13 +10,24 @@
 	<h3>My first javasript exp</h3>
   <script>
     "use strict";
-    document.write('Hello World!');
+    let guestList=`Guests:
+    *John
+    *Raghav
+    *Sahil`;
+    alert(guestList);
+    let len="Rahul";
+    alert(len.length);
+    //Strings are immutable
+    alert('Interface'.toUpperCase());
+    let slicing="MY name is khan";
+    alert(slicing.slice(2,12));
+    /*document.write('Hello World!');
     let name="hello";
     document.write(name.toUpperCase());
     let num=123.456;
     alert(Math.round(num));
     alert(parseInt(num));
-    /*let a=3;
+    let a=3;
     let b=33;
     let c=a+b;
     alert(c);
