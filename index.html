@@ -1,54 +1,20 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<title>first form</title>
-   <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-	<h3>My first javasript exp</h3>
-  <script>
-    "use strict";
-    //some array practice
-    let arr=['banana','apple','mango'];
-    alert(arr.pop());
-    arr.length=2;
-    alert(arr.pop());
-    let guestList=`Guests:
-    *John
-    *Raghav
-    *Sahil`;
-    alrt(guestList);
-    let len="Rahul";
-    alert(len.length);
-    //Strings are immutable
-    alert('Interface'.toUpperCase());
-    let slicing="MY name is khan";
-    alert(slicing.slice(2,12));
-    document.write('Hello World!');
-    let name="hello";
-    document.write(name.toUpperCase());
-    let num=123.456;
-    alert(Math.round(num));
-    alert(parseInt(num));
-    let a=3;
-    let b=33;
-    let c=a+b;
-    alert(c);
-    function add(n1,n2){
-      return n1+n2;
-    }
-    let total=add(30,40);
-    alert(total);
-    let funct=(n3,n4) => n3+n4;
-    alert(funct(3,4));
-    let result=prompt("your name");
-    alert(`Your name is ${result} `); 
-    let isBoss=confirm("Is that Mr. Rahul");
-    alert(isBoss);
+  <head>
+    <title>WeakMap and WeakSet</title>
+  </head>
+  <body>
+    <script>
+      let prices={
+        chicken:120,
+        fish:140,
+        banana:60,
+      };
+    //making an array from objects
+  let doublePrices = Object.fromEntries(
+  Object.entries(prices).map(([key, value]) => [key, value * 2])
+);
+    alert(doublePrices.fish);
     </script>
-  
-</body>
-
+  </body>
 </html>
